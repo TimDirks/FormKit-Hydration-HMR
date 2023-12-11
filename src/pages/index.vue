@@ -12,6 +12,8 @@
                 <h1>Please fill in your details below</h1>
 
                 <InputFields />
+
+                <pre>{{ value }}</pre>
             </FormKit>
         </div>
     </div>
@@ -34,5 +36,11 @@ body {
     background-color: #fff;
     border-radius: 1rem;
     padding: 1rem 2rem;
+}
+
+pre {
+    background-color: #eceded;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 </style>
