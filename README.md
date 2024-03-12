@@ -1,6 +1,6 @@
-# FormKit Nuxt Recursive warning
+# FormKit Nuxt Hydration warning
 
-A reproducible example to get the `Maximum recursive updates exceeded in component <FormKitSchema>` warning from Vue.
+A reproducible example to get the Hydration warning from Vue when page reload triggers.
 
 ## Setup
 
@@ -24,6 +24,5 @@ yarn dev
 
 1. Start the development server and open it in your browser.
 2. Open the developer tools to check the console output.
-3. In your IDE, open any `.vue` file and change something in the script tag (like adding a simple comment)
-4. Save the file changes
-5. Hot Module Reload should trigger and after that a warning should appear in your console stating `Maximum recursive updates exceeded in component <FormKitSchema>`.
+3. On initial page load, no hydration warnings should appear.
+4. When you refresh the page, hydration warnings should appear stating that the `name` attribute mismatches between client and server.

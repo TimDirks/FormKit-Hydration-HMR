@@ -1,5 +1,10 @@
 <script lang="ts" setup>
-//
+const options = [
+    'Apples',
+    'Bananas',
+    'Oranges',
+    'Grapes',
+];
 </script>
 
 <template>
@@ -9,9 +14,11 @@
                 type="form"
                 #default="{value}"
             >
-                <h1>Please fill in your details below</h1>
+                <h1>Please select your favorite fruit</h1>
 
-                <InputFields />
+                <FormKit type="list" name="fruits">
+                    <FormKit type="radio" :options="options" />
+                </FormKit>
 
                 <pre>{{ value }}</pre>
             </FormKit>

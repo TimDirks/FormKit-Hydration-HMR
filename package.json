@@ -1,5 +1,5 @@
 {
-  "name": "formkit-recursive-test",
+  "name": "formkit-hydration-warning",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,11 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@formkit/icons": "^1.4.0",
-    "@formkit/nuxt": "^1.4.0",
-    "@formkit/themes": "^1.4.0",
+    "@formkit/icons": "^1.6.0",
+    "@formkit/nuxt": "^1.6.0",
+    "@formkit/themes": "^1.6.0",
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.8.2",
+    "nuxt": "^3.10.3",
     "prettier": "^3.0.3"
   }
 }

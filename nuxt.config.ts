@@ -5,9 +5,6 @@ export default defineNuxtConfig({
     },
     srcDir: 'src/',
     modules: ['@formkit/nuxt'],
-    components: {
-        dirs: ['~/components'],
-    },
     formkit: {
         autoImport: true,
     },
